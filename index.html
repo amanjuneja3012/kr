@@ -5,9 +5,6 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
         Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
@@ -19,11 +16,8 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
-        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .
+        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
   </div>
 </div>
@@ -33,11 +27,8 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
-        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .
+        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
   </div>
 </div>
@@ -47,11 +38,8 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
-        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .
+        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
   </div>
 </div>
@@ -61,11 +49,8 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
-        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .
+        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
   </div>
 </div>
@@ -75,11 +60,8 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
-        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .
+        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
   </div>
 </div>
@@ -89,11 +71,8 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
-        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .
+        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
   </div>
 </div>
@@ -103,11 +82,8 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
-        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .
+        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
   </div>
 </div>
@@ -117,11 +93,8 @@
      <div class="contentLarge">Heading for the button</div>
   </div>
   <div class="onHoverClass buttonBox">
-      <div class="contentSmall heading">
-        Detailed Heading for the button here
-      </div>
       <div class="contentSmall scrollY">
-        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .
+        Supporting text can come here ,Supporting text can come here ,Supporting text can come here .Supporting text can come here .
       </div>
   </div>
 </div>
@@ -134,20 +107,20 @@
   margin: 2%;
   height: 28.5%;
   vertical-align:top;
+  position: relative;
+  overflow:hidden;
 }
 .parent .onHoverClass{
-    display:none;
+    bottom:-1000px;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
 }
 .parent .primaryClass{
     display:inline-flex;
 }
 .parent:hover .onHoverClass{
     display:inline-flex;
-    background:red;
-    color:black;
-}
-.parent:hover .primaryClass{
-    display:none;
+    bottom:0;
 }
 .buttonBox{
     background: orange;
@@ -159,6 +132,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    transition: bottom .3s ease-out;
 }
 .heading{
   font-weight:bold;
@@ -198,5 +172,11 @@
   .wrapper{
     height: 400px;
     width: 400px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 </style>
